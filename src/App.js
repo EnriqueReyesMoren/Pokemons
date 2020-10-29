@@ -25,6 +25,10 @@ function App() {
         }),
       ));
   }
+
+  async function fetchSearch (){
+    setPoke(arr)
+  }
   
   useEffect(() => {
   fetchPokemons()
@@ -49,7 +53,7 @@ function App() {
       
       <form onChange={submitSearch} onSubmit={submitSearch} className="search">
         <input type="text" className="searchTerm" placeholder="Busca a tu Pokemon favorito" {...searchInput}/>
-        <button className="searchButton" onClick={fetchPokemons}>Clear</button>
+        <button className="searchButton" onClick={fetchSearch}>Clear</button>
         </form>
        <div className='pokegallery'>
         
