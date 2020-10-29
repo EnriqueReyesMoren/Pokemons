@@ -94,55 +94,12 @@ class NavOne extends Component {
                         </div>
                         <div className="side-menu-wrap">
                             <ul className="side-menu-ul">
-                                <li className="sidenav__item"><a href="/">home</a>
-                                    <span className="menu-plus-icon"></span>
-                                    <ul className="side-sub-menu">
-                                        <li><Link to="/"><a>Home 1</a></Link></li>
-                                        <li><Link to="/index2"><a>Home 2</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li className="sidenav__item"><a href="#">causes</a>
-                                    <span className="menu-plus-icon"></span>
-                                    <ul className="side-sub-menu">
-                                        <li><Link to="/causes"><a>causes</a></Link></li>
-                                        <li><Link to="/causes-detail"><a>causes detail</a></Link></li>
-                                        <li><Link to="/donate"><a>donate now</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li className="sidenav__item"><a href="#">event</a>
-                                    <span className="menu-plus-icon"></span>
-                                    <ul className="side-sub-menu">
-                                        <li><Link to="/events"><a>events</a></Link></li>
-                                        <li><Link to="/events-detail"><a>events detail</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li className="sidenav__item"><a href="#">news</a>
-                                    <span className="menu-plus-icon"></span>
-                                    <ul className="side-sub-menu">
-                                        <li><Link to="/news"><a>news</a></Link></li>
-                                        <li><Link to="/single-news"><a>news detail</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li className="sidenav__item"><a href="#">pages</a>
-                                    <span className="menu-plus-icon"></span>
-                                    <ul className="side-sub-menu">
-                                        <li><Link to="/about"><a>about</a></Link></li>
-                                        <li><Link to="/gallery"><a>gallery</a></Link></li>
-                                        <li><Link to="/volunteer"><a>become a volunteer</a></Link></li>
-                                        <li><Link to="/team"><a>our team</a></Link></li>
-                                        <li><Link to="/sponsor"><a>sponsors</a></Link></li>
-                                    </ul>
-                                </li>
-                                <li className="sidenav__item"><Link to="/contact"><a>contact</a></Link></li>
+                                
+                                <li className="sidenav__item"><Link to="/"><a>Home</a></Link></li>
                             </ul>
-                            <ul className="side-social">
-                                <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fa fa-youtube-play"></i></a></li>
-                                <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                            </ul>
+                           
                             <div className="side-btn">
-                                <Link to="/donate"><a className="theme-btn">donate now</a></Link>
+                                <Link to="/pokemons/25"><a className="theme-btn">Pikachu</a></Link>
                             </div>
                         </div>
                     </div>

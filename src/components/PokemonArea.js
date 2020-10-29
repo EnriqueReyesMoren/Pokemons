@@ -4,6 +4,21 @@ import useInput from "../hooks/useInput";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const StyledButton = styled.button`
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: ${props => props.btnType === 'primary' ? 'rgb(100,100,220)' : props.btnType === 'danger' ? 'red' : 'grey'};
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  box-shadow:none;
+  border:none;
+
+`
+
+
+
+
 const PokemonsArea = () => {
     const [result, setResult] = useState([]);
   const [poke, setPoke] = useState([]);
@@ -34,6 +49,8 @@ const PokemonsArea = () => {
   fetchPokemons()
   }, []);
 
+
+
    setTimeout(() => {
      setLoad(false);
      console.log(poke)
@@ -47,6 +64,19 @@ const PokemonsArea = () => {
                                   pokemon.types[0].type.name.toLowerCase().includes(searchInput.value.toLowerCase()) ||
                                   pokemon.abilities[0].ability.name.toLowerCase().includes(searchInput.value.toLowerCase())))
     if (searchInput.value === "") fetchPokemons()
+  }
+
+  const nameSort = () => {
+    setPoke([...poke].sort((a, b) => a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
+    console.log(arr)
+  }
+
+  const experienceSort = () => {
+    setPoke([...poke].sort((a, b) => a.base_experience > b.base_experience ? -1 : a.base_experience < b.base_experience ? 1 : 0))
+  }
+
+  const popSort = () => {
+    setPoke([...poke].sort((a, b) => a.id > b.id ? -1 : a.id < b.id ? 1 : 0))
   }
     return (
         <div>
@@ -69,7 +99,12 @@ const PokemonsArea = () => {
 	<button class="search-btn" type="submit">
 		<span>Search</span>
 	</button>
-</form>
+        </form>
+               <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                <StyledButton onClick={nameSort} btnType='primary'>Sort by name</StyledButton>
+                <StyledButton onClick={popSort} btnType='primary'>Sort by Id</StyledButton>
+                <StyledButton onClick={experienceSort} btnType='primary'>Sort by Experience</StyledButton>
+                </div>
                                
                         </div>
                     </div>
@@ -101,7 +136,11 @@ const PokemonsArea = () => {
                                             <li><i className="icon-target"></i> Experience: <span>{img.base_experience}</span></li>
                                             <li><i className="fa fa-line-chart"></i> Game Index: <span>{img.game_indices[0].game_index}</span></li>
                                         </ul>
+                                        <div style={{display:"flex", justifyContent:"space-between"}}>
                                         <Link to={`pokemons/${img.id}`} className="theme-btn">View details</Link>
+                                        <i className="fav-button"></i>
+                                         <span className="fav-span">liked!</span>
+                                         </div>
                                     </div>
                                 </div>
                             </div>

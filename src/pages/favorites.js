@@ -3,15 +3,15 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Pokemons from "../components/Pokemons";
-import Footer from "../components/Footer";
+
 
 const FavoritesPage = () => {
     return (
-        <Layout pageTitle="Oxpitan | Causes">
+        <Layout pageTitle="Pokedex | Favorites Pokemons">
             <NavOne />
             <PageHeader title="Causes" />
             <Pokemons />
-            <Footer />
+            
         </Layout>
     );
 };

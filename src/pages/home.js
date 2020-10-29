@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import SliderOne from "../components/SliderOne";
 import PokemonsArea from "../components/PokemonArea";
-import CallToActionTwo from "../components/CallToActionTwo";
 
 const HomePage = () => {
     return (
@@ -11,7 +10,6 @@ const HomePage = () => {
           <NavOne />
           <SliderOne />
           <PokemonsArea />
-          <CallToActionTwo />
         </Layout>
     );
 };
