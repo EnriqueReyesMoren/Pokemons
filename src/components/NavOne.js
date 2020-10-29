@@ -75,8 +75,7 @@ class NavOne extends Component {
                                                     <ul>
                                                         
                                                         <li><Link to="/"><a>Pokedex</a></Link></li>
-                                                        <li><Link to="/pokemon-details"><a>Details</a></Link></li>
-                                                        <li><Link to="favorits"><a>Favorits</a></Link></li>
+                                                        <li><Link to="/pokemons/25"><a>Pikachu</a></Link></li>
                                                     </ul>
                                                 </nav>
                                             </div>

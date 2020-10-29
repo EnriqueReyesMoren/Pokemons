@@ -3,15 +3,14 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import CausesDetail from "../components/CausesDetail";
+import PokemonsDetails from "../components/PokemonsDetail";
 
 const PokemonPage = () => {
     return (
-        <Layout pageTitle="Oxpitan | Causes Detail">
+        <Layout pageTitle="Pokedex | Torque Studio">
             <NavOne />
-            <PageHeader title="Causes Detail" />
-            <CausesDetail />
-            <Footer />
+            <PageHeader title="Who's That Pokémon?" />
+            <PokemonsDetails />
         </Layout>
     );
 };

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import useInput from "../hooks/useInput";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-const CausesArea = () => {
+const PokemonsArea = () => {
     const [result, setResult] = useState([]);
   const [poke, setPoke] = useState([]);
   const [load, setLoad] = useState('true');
@@ -37,6 +39,7 @@ const CausesArea = () => {
      console.log(poke)
    }, 1000);
 
+ 
    function submitSearch(e){
     e.preventDefault()
     setSearchOn(true)
@@ -98,7 +101,7 @@ const CausesArea = () => {
                                             <li><i className="icon-target"></i> Experience: <span>{img.base_experience}</span></li>
                                             <li><i className="fa fa-line-chart"></i> Game Index: <span>{img.game_indices[0].game_index}</span></li>
                                         </ul>
-                                        <a href="/" className="theme-btn">View details</a>
+                                        <Link to={`pokemons/${img.id}`} className="theme-btn">View details</Link>
                                     </div>
                                 </div>
                             </div>
@@ -117,4 +120,4 @@ const CausesArea = () => {
     );
 };
 
-export default CausesArea;
+export default PokemonsArea;

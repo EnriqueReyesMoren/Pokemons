@@ -29,7 +29,7 @@ const SliderOne = () => {
                                 <div className="row">
                                     <div className="col-md-7">
                                         <div className="slider-heading">
-                                            <p className="slider__meta">Bienvenido a tu Pokedex</p>
+                                            <p className="slider__meta">Welcome to your Pokedex</p>
                                             <h2 className="slider__title">Here you can find your favorite Pokemon info</h2>
                                         </div>
                                     </div>

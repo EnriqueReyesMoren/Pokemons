@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom"
 
 
-const Causes = () => {
+const Pokemons = () => {
     return (
         <section className="causes-area causes-area2">
             <div className="container">
@@ -125,4 +125,4 @@ const Causes = () => {
     );
 };
 
-export default Causes;
+export default Pokemons;

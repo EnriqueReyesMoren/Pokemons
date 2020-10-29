@@ -1,9 +1,8 @@
 import React from 'react';
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
-import Footer from "../components/Footer";
 import SliderOne from "../components/SliderOne";
-import CausesArea from "../components/CausesArea";
+import PokemonsArea from "../components/PokemonArea";
 import CallToActionTwo from "../components/CallToActionTwo";
 
 const HomePage = () => {
@@ -11,9 +10,8 @@ const HomePage = () => {
         <Layout pageTitle="Pokemon - Torque Studio">
           <NavOne />
           <SliderOne />
-          <CausesArea />
+          <PokemonsArea />
           <CallToActionTwo />
-          <Footer />
         </Layout>
     );
 };
